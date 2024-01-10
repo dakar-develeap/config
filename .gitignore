@@ -1,3 +1,4 @@
 .DS_Store
 demo-crm/ingress-controller
 demo-crm/install-crm.sh
+github-secret.yaml
