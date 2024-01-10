@@ -1,3 +1,4 @@
+# This is develeap's version of the official "argocd-example-apps" found here: https://github.com/argoproj/argocd-example-apps.
 # ArgoCD Example Apps
 
 This repository contains example applications for demoing ArgoCD functionality. Feel free

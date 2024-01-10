@@ -1,0 +1,12 @@
+apiVersion: v2
+name: demo-crm
+type: application
+description: A Helm chart for deploying the Demo CRM webapp for the DevOps bootcamp.
+# This is the chart version. This version number should be incremented each time you make changes to the chart and its templates, including the app version.
+version: 0.1.1
+# This is the version number of the application being deployed. This version number should be incremented each time you make changes to the application. It is recommended to use it with quotes.
+appVersion: "v4"
+dependencies:
+- name: mongodb
+  version: "12.1.8"
+  repository: https://charts.bitnami.com/bitnami

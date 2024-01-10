@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ include "demo-crm.fullname" . }}
+  labels:
+    {{- include "demo-crm.labels" . | nindent 4 }}
+spec:
+  type: {{ if .Values.ingress.enabled }}ClusterIP{{ else }}{{ .Values.service.type }}{{ end }}
+  ports:
+  - port: {{ .Values.service.port }}
+    targetPort: app
+    protocol: TCP
+    name: app
+  selector:
+    {{- include "demo-crm.selectorLabels" . | nindent 4 }}

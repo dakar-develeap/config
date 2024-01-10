@@ -1,0 +1,15 @@
+app:
+  config:
+    logLevel: debug
+    mongoCleanup:
+      enabled: true
+      schedule: "0 0 * * *"
+      restartPolicy: Never
+      mongoVersion: 5.0.8
+ingress:
+  hosts:
+  - host: dakar-crm.ddns.net
+    paths:
+    - path: /
+      pathType: Prefix
+

@@ -1,0 +1,3 @@
+ingressClassResource:
+  default: true
+
