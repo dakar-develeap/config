@@ -7,7 +7,7 @@ app:
     mongo:
       auth:
         username: root
-        password: bootcamp13
+        password: passwordisnotagoodpassword
       # List of MongםDB replicaset hosts; or one host
       # Example 1:
       #   hosts: [mongodb]
