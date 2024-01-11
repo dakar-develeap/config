@@ -44,7 +44,7 @@ podAnnotations: {}
 
 ingress:
   # when @ingress.enabled is true, will override @service.type to always be ClusterIP
-  enabled: true
+  enabled: false
   className: nginx
   annotations: {}
   # kubernetes.io/ingress.class: nginx
@@ -61,7 +61,7 @@ ingress:
 
 service:
   # Service type will only take affect if @ingress.enabled is false
-  type: ClusterIP
+  type: LoadBalancer
   port: 3000
 
 # @resources default empty; see example values below
