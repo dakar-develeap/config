@@ -61,7 +61,7 @@ ingress:
 
 service:
   # Service type will only take affect if @ingress.enabled is false
-  type: LoadBalancer
+  type: ClusterIP
   port: 3000
 
 # @resources default empty; see example values below
