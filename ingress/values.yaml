@@ -1,0 +1,10 @@
+# Configuration for exporting metrics, see https://kubernetes.github.io/ingress-nginx/user-guide/monitoring/
+controller:
+  ingressClassResource:
+    default: true
+  metrics:
+    enabled: false
+    serviceMonitor:
+      enabled: true
+      additionalLabels:
+        release: "kube-prometheus-stack" # name of the helm release for the kube-prometheus-stack
